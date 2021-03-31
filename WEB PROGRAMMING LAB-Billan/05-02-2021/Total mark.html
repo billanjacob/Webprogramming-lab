@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+
+<form>
+subject 1:<input type="number" id="mark1"><br>
+subject 2:<input  type="number" id="mark2"><br>
+subject 3:<input  type="number" id="mark3"><br>
+subject 4:<input  type="number" id="mark4"><br>
+subject 5:<input  type="number" id="mark5"><br>
+<button onclick="TotalMark()">Total</button><br>
+</form>
+
+<script language="javascript" type="text/javascript">
+
+function TotalMark()
+{
+	var m1=document.getElementById('mark1').value;
+	var m2=document.getElementById('mark2').value;
+	var m3=document.getElementById('mark3').value;
+	var m4=document.getElementById('mark4').value;
+	var m5=document.getElementById('mark5').value;
+	var total =parseInt(m1)+parseInt(m2)+parseInt(m3)+parseInt(m4)+parseInt(m5);
+	document.write("Total Mark : "+total)
+}
+
+</script>
+</body>
+</html>
